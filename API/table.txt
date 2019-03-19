@@ -1,0 +1,12 @@
+create table Clientes(
+	idCliente int identity,
+	Nome varchar(100),
+	Contrato varchar(255)
+)
+
+INSERT INTO Clientes ( Nome, Contrato) VALUES ('Will', 'Koff')
+INSERT INTO Clientes ( Nome, Contrato) VALUES ('Michelangelo', 'Oslov')
+INSERT INTO Clientes ( Nome, Contrato) VALUES ('Baldur', 'Tyr')
+INSERT INTO Clientes ( Nome, Contrato) VALUES ('San', 'Andreas')
+
+select * from Clientes

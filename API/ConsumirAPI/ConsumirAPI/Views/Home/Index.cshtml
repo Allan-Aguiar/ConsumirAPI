@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-3">
+        <h4>Clientes Cadastrados</h4>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>CONTRATO</th>
+            </tr>
+            @foreach (var cliente in Model)
+            {
+                <tr>
+                    <td>@cliente.IdCliente</td>
+                    <td>@cliente.Nome</td>
+                    <td>@cliente.Contrato</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

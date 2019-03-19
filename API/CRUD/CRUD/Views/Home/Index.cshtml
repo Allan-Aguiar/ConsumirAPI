@@ -1,0 +1,17 @@
+﻿@model CRUD.Models.Clientes
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@using (Html.BeginForm("Create", "Home",FormMethod.Post))
+{
+    <br/>
+    <div>
+        @Html.TextBoxFor(model => model.idCliente);
+    </div>
+    <div>
+        <input type="submit" value="Create">
+    </div>
+}
